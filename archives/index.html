@@ -5,16 +5,16 @@
   
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="dns-prefetch" href="http://yoursite.com">
+  <link rel="dns-prefetch" href="http://darkerzs.top">
   <title>Archives | darkerzs</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Learning">
 <meta property="og:type" content="website">
 <meta property="og:title" content="darkerzs">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+<meta property="og:url" content="http://darkerzs.top/archives/index.html">
 <meta property="og:site_name" content="darkerzs">
 <meta property="og:description" content="Learning">
-<meta property="og:locale" content="default">
+<meta property="og:locale" content="zh-CN">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="darkerzs">
 <meta name="twitter:description" content="Learning">
@@ -28,7 +28,7 @@
   <style type="text/css">
   
     #container.show {
-      background: linear-gradient(200deg,#a0cfe4,#e8c37e);
+      background: linear-gradient(200deg,#a0cfe4,#f5c771);
     }
   </style>
   
@@ -42,12 +42,11 @@
     <canvas id="anm-canvas" class="anm-canvas"></canvas>
     <div class="left-col" q-class="show:isShow">
       
-<div class="overlay" style="background: #4d4d4d"></div>
+<div class="overlay" style="background: #3B4D4A"></div>
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="/assets/blogImg/vangogh.jpg" class="js-avatar show">
-        <img src="/assets/blogImg/vangogh.jpg" class="js-avatar show" style="width: 100%;height: 100%;opacity: 1;">
+			<img src="/assets/blogImg/vangogh.jpg" class="js-avatar">
 		</a>
 		<hgroup>
 		  <h1 class="header-author"><a href="/">darkerzs</a></h1>
@@ -87,6 +86,8 @@
 		        
 					<a class="weibo" target="_blank" href="https://weibo.com/u/5491491764" title="weibo"><i class="icon-weibo"></i></a>
 		        
+					<a class="rss" target="_blank" href="/atom.xml" title="rss"><i class="icon-rss"></i></a>
+		        
 					<a class="weixin" target="_blank" href="/assets/weixin/weixin.jpg" title="weixin"><i class="icon-weixin"></i></a>
 		        
 			</div>
@@ -98,7 +99,7 @@
     <div class="mid-col" q-class="show:isShow,hide:isShow|isFalse">
       
 <nav id="mobile-nav">
-  	<div class="overlay js-overlay" style="background: #4d4d4d"></div>
+  	<div class="overlay js-overlay" style="background: #3B4D4A"></div>
 	<div class="btnctn js-mobile-btnctn">
   		<div class="slider-trigger list" q-on="click: openSlider(e)"><i class="icon icon-sort"></i></div>
 	</div>
@@ -127,6 +128,8 @@
 						<a class="github" target="_blank" href="https://github.com/darkerzs" title="github"><i class="icon-github"></i></a>
 			        
 						<a class="weibo" target="_blank" href="https://weibo.com/u/5491491764" title="weibo"><i class="icon-weibo"></i></a>
+			        
+						<a class="rss" target="_blank" href="/atom.xml" title="rss"><i class="icon-rss"></i></a>
 			        
 						<a class="weixin" target="_blank" href="/assets/weixin/weixin.jpg" title="weixin"><i class="icon-weixin"></i></a>
 			        
@@ -186,6 +189,17 @@
 
         <div class="article-info info-on-right">
           
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">music</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
           
 
         </div>
@@ -207,12 +221,23 @@
     	 
   
     <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/03/15/hello-world/">Hello World</a>
+      <a class="archive-article-title" href="/2019/03/15/hello-world/">Hexo 基础操作指南</a>
     </h1>
   
 
         <div class="article-info info-on-right">
           
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Hexo</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
           
 
         </div>
@@ -256,7 +281,7 @@
 		toc_hide_index: true,
 		root: "/",
 		innerArchive: true,
-		showTags: false
+		showTags: true
 	}
 </script>
 
@@ -316,6 +341,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Hexo</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">music</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>
@@ -374,7 +407,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             </li>
           
             <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接3</a>
+              <a href="https://github.com/litten/hexo-theme-yilia" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>yilia</a>
             </li>
           
         </ul>
@@ -385,7 +418,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">本科未完&lt;br&gt;&lt;br&gt;刚开始玩，想成为技术大牛&lt;br&gt;人生不易，唯有努力</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">本科未完&lt;br&gt;&lt;br&gt;刚开始玩，想成为技术大牛&lt;br&gt;&lt;br&gt;人生不易，唯有努力</div>
   	  	
     	</section>
     

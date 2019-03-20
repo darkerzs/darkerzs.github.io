@@ -5,20 +5,21 @@
   
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Hello World | darkerzs</title>
+  <link rel="dns-prefetch" href="http://darkerzs.top">
+  <title>Hexo 基础操作指南 | darkerzs</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+  <meta name="description" content="HEXO 指令创建新文章1$ hexo new &quot;文章名&quot; 生成静态123$ hexo generate---$ hexo g 启动服务可本地预览123$ hexo server---$ hexo s 部署到远端123$ hexo deploy---$ hexo d 其它指令hexo1234567$ npm install -g hexo-cli #安装---$ npm update hexo -">
+<meta name="keywords" content="Hexo">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2019/03/15/hello-world/index.html">
+<meta property="og:title" content="Hexo 基础操作指南">
+<meta property="og:url" content="http://darkerzs.top/2019/03/15/hello-world/index.html">
 <meta property="og:site_name" content="darkerzs">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
-<meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-03-15T04:52:58.111Z">
+<meta property="og:description" content="HEXO 指令创建新文章1$ hexo new &quot;文章名&quot; 生成静态123$ hexo generate---$ hexo g 启动服务可本地预览123$ hexo server---$ hexo s 部署到远端123$ hexo deploy---$ hexo d 其它指令hexo1234567$ npm install -g hexo-cli #安装---$ npm update hexo -">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-03-19T13:23:05.035Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="Hexo 基础操作指南">
+<meta name="twitter:description" content="HEXO 指令创建新文章1$ hexo new &quot;文章名&quot; 生成静态123$ hexo generate---$ hexo g 启动服务可本地预览123$ hexo server---$ hexo s 部署到远端123$ hexo deploy---$ hexo d 其它指令hexo1234567$ npm install -g hexo-cli #安装---$ npm update hexo -">
   
     <link rel="alternative" href="/atom.xml" title="darkerzs" type="application/atom+xml">
   
@@ -29,7 +30,7 @@
   <style type="text/css">
   
     #container.show {
-      background: linear-gradient(200deg,#a0cfe4,#e8c37e);
+      background: linear-gradient(200deg,#a0cfe4,#f5c771);
     }
   </style>
   
@@ -43,12 +44,11 @@
     <canvas id="anm-canvas" class="anm-canvas"></canvas>
     <div class="left-col" q-class="show:isShow">
       
-<div class="overlay" style="background: #4d4d4d"></div>
+<div class="overlay" style="background: #3B4D4A"></div>
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="/assets/blogImg/vangogh.jpg" class="js-avatar show">
-        <img src="/assets/blogImg/vangogh.jpg" class="js-avatar show" style="width: 100%;height: 100%;opacity: 1;">
+			<img src="/assets/blogImg/vangogh.jpg" class="js-avatar">
 		</a>
 		<hgroup>
 		  <h1 class="header-author"><a href="/">darkerzs</a></h1>
@@ -88,6 +88,8 @@
 		        
 					<a class="weibo" target="_blank" href="https://weibo.com/u/5491491764" title="weibo"><i class="icon-weibo"></i></a>
 		        
+					<a class="rss" target="_blank" href="/atom.xml" title="rss"><i class="icon-rss"></i></a>
+		        
 					<a class="weixin" target="_blank" href="/assets/weixin/weixin.jpg" title="weixin"><i class="icon-weixin"></i></a>
 		        
 			</div>
@@ -99,7 +101,7 @@
     <div class="mid-col" q-class="show:isShow,hide:isShow|isFalse">
       
 <nav id="mobile-nav">
-  	<div class="overlay js-overlay" style="background: #4d4d4d"></div>
+  	<div class="overlay js-overlay" style="background: #3B4D4A"></div>
 	<div class="btnctn js-mobile-btnctn">
   		<div class="slider-trigger list" q-on="click: openSlider(e)"><i class="icon icon-sort"></i></div>
 	</div>
@@ -128,6 +130,8 @@
 						<a class="github" target="_blank" href="https://github.com/darkerzs" title="github"><i class="icon-github"></i></a>
 			        
 						<a class="weibo" target="_blank" href="https://weibo.com/u/5491491764" title="weibo"><i class="icon-weibo"></i></a>
+			        
+						<a class="rss" target="_blank" href="/atom.xml" title="rss"><i class="icon-rss"></i></a>
 			        
 						<a class="weixin" target="_blank" href="/assets/weixin/weixin.jpg" title="weixin"><i class="icon-weixin"></i></a>
 			        
@@ -164,7 +168,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      Hello World
+      Hexo 基础操作指南
     </h1>
   
 
@@ -177,44 +181,52 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+        <h2 id="HEXO-指令"><a href="#HEXO-指令" class="headerlink" title="HEXO 指令"></a>HEXO 指令</h2><h3 id="创建新文章"><a href="#创建新文章" class="headerlink" title="创建新文章"></a>创建新文章</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"文章名"</span></span><br></pre></td></tr></table></figure>
+<h3 id="生成静态"><a href="#生成静态" class="headerlink" title="生成静态"></a>生成静态</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br><span class="line">---</span><br><span class="line">$ hexo g</span><br></pre></td></tr></table></figure>
+<h3 id="启动服务可本地预览"><a href="#启动服务可本地预览" class="headerlink" title="启动服务可本地预览"></a>启动服务可本地预览</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br><span class="line">---</span><br><span class="line">$ hexo s</span><br></pre></td></tr></table></figure>
+<h3 id="部署到远端"><a href="#部署到远端" class="headerlink" title="部署到远端"></a>部署到远端</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br><span class="line">---</span><br><span class="line">$ hexo d</span><br></pre></td></tr></table></figure>
+<h2 id="其它指令"><a href="#其它指令" class="headerlink" title="其它指令"></a>其它指令</h2><h3 id="hexo"><a href="#hexo" class="headerlink" title="hexo"></a>hexo</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-cli <span class="comment">#安装</span></span><br><span class="line">---</span><br><span class="line">$ npm update hexo -p      <span class="comment">#升级</span></span><br><span class="line">---</span><br><span class="line">$ hexo init               <span class="comment">#初始化</span></span><br><span class="line">---</span><br><span class="line">$ hexo clean              <span class="comment">#清除缓存</span></span><br></pre></td></tr></table></figure>
 
       
 
-      
-        <div class="page-reward">
-          <a href="javascript:;" class="page-reward-btn tooltip-top">
-            <div class="tooltip tooltip-east">
-            <span class="tooltip-item">
-              赏
-            </span>
-            <span class="tooltip-content">
-              <span class="tooltip-text">
-                <span class="tooltip-inner">
-                  <p class="reward-p"><i class="icon icon-quo-left"></i>感谢浏览<i class="icon icon-quo-right"></i></p>
-                  <div class="reward-box">
-                    
-                    
-                  </div>
-                </span>
-              </span>
-            </span>
-          </div>
-          </a>
-        </div>
+
+
+  <div class="declare">
+    <strong>本文作者：</strong>
+    
+      darkerzs
+    
+    <br>
+    <strong>本文链接：</strong>
+    http://darkerzs.top/2019/03/15/hello-world/
+    <br>
+    <strong>版权声明：</strong>
+    本作品采用
+    <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>
+    进行许可。转载请注明出处！
+    
+      <br>
+      <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"></a>
+    
+  </div>
+
+
       
     </div>
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Hexo</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -265,7 +277,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/03/15/hello-world/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://darkerzs.top/2019/03/15/hello-world/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -305,6 +317,19 @@
         </div>
         
         
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#HEXO-指令"><span class="toc-number">1.</span> <span class="toc-text">HEXO 指令</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#创建新文章"><span class="toc-number">1.1.</span> <span class="toc-text">创建新文章</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#生成静态"><span class="toc-number">1.2.</span> <span class="toc-text">生成静态</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#启动服务可本地预览"><span class="toc-number">1.3.</span> <span class="toc-text">启动服务可本地预览</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#部署到远端"><span class="toc-number">1.4.</span> <span class="toc-text">部署到远端</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#其它指令"><span class="toc-number">2.</span> <span class="toc-text">其它指令</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#hexo"><span class="toc-number">2.1.</span> <span class="toc-text">hexo</span></a></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
+        
     </div>
 </aside>
 
@@ -312,6 +337,17 @@
 
   
   
+  
+  <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
+<script>
+  var cloudTieConfig = {
+    url: "http://darkerzs.top/2019/03/15/hello-world/", 
+    sourceId: "hello-world",
+    productKey: "true",
+    target: "cloud-tie-wrapper"
+  };
+</script>
+<script src="//img1.cache.netease.com/f2e/tie/yun/sdk/loader.js"></script>
   
 
   
@@ -349,7 +385,7 @@
 		toc_hide_index: true,
 		root: "/",
 		innerArchive: true,
-		showTags: false
+		showTags: true
 	}
 </script>
 
@@ -409,6 +445,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Hexo</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">music</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>
@@ -467,7 +511,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             </li>
           
             <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接3</a>
+              <a href="https://github.com/litten/hexo-theme-yilia" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>yilia</a>
             </li>
           
         </ul>
@@ -478,7 +522,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">本科未完&lt;br&gt;&lt;br&gt;刚开始玩，想成为技术大牛&lt;br&gt;人生不易，唯有努力</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">本科未完&lt;br&gt;&lt;br&gt;刚开始玩，想成为技术大牛&lt;br&gt;&lt;br&gt;人生不易，唯有努力</div>
   	  	
     	</section>
     
